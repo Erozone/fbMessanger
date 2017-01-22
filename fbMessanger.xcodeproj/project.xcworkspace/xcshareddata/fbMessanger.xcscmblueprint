@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "28B19CF836FCEE8DD4141D37BC491FB3EAE68FAF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BDBDF5A11A2E6E58C082B061FB1F85058F5C3290" : 9223372036854775807,
+    "28B19CF836FCEE8DD4141D37BC491FB3EAE68FAF" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F0A41E36-8AF6-4C27-9A0E-4243617573D6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BDBDF5A11A2E6E58C082B061FB1F85058F5C3290" : "",
+    "28B19CF836FCEE8DD4141D37BC491FB3EAE68FAF" : "fbMessanger\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "fbMessanger",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "fbMessanger.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Erozone\/fbMessanger.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "28B19CF836FCEE8DD4141D37BC491FB3EAE68FAF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Erozone\/LoginDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BDBDF5A11A2E6E58C082B061FB1F85058F5C3290"
+    }
+  ]
+}

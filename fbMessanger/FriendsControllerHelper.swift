@@ -11,12 +11,13 @@ import CoreData
 
 extension FriendsController{
     
-    private func createMessageWithText(text: String,friend :Friend,minuteAgo :Double,context:NSManagedObjectContext,isSender : Bool = false){
+    static func createMessageWithText(text: String,friend :Friend,minuteAgo :Double,context:NSManagedObjectContext,isSender : Bool = false)-> Message{
         let message = NSEntityDescription.insertNewObject(forEntityName: "Message", into: context) as! Message
         message.text = text
         message.date = NSDate().addingTimeInterval(-minuteAgo * 60)
         message.friend = friend
         message.isSender = NSNumber(booleanLiteral: isSender) as Bool
+        return message
     }
     
     private func createSteveMessageWithContext(context :NSManagedObjectContext){
@@ -24,15 +25,15 @@ extension FriendsController{
         steve.name = "Steve Jobs"
         steve.profileImageName = "Steve"
         
-        createMessageWithText(text: "Hello!Good Morning..", friend: steve,minuteAgo :5, context: context)
-        createMessageWithText(text: "How are you?  Hope you are having a good morning ..", friend: steve,minuteAgo : 4, context: context)
-        createMessageWithText(text: "Are you interest in buying an apple product..We have a wide variety of apple device that suits your needs. Please make your purchase with us..", friend: steve,minuteAgo :3, context: context)
-        createMessageWithText(text: "Totally understand that you want new iPhone 7,But You have to wait for September.Thats hows apple did works....", friend: steve,minuteAgo :1, context: context)
+        FriendsController.createMessageWithText(text: "Hello!Good Morning..", friend: steve,minuteAgo :5, context: context)
+        FriendsController.createMessageWithText(text: "How are you?  Hope you are having a good morning ..", friend: steve,minuteAgo : 4, context: context)
+        FriendsController.createMessageWithText(text: "Are you interest in buying an apple product..We have a wide variety of apple device that suits your needs. Please make your purchase with us..", friend: steve,minuteAgo :3, context: context)
+        FriendsController.createMessageWithText(text: "Totally understand that you want new iPhone 7,But You have to wait for September.Thats hows apple did works....", friend: steve,minuteAgo :1, context: context)
         
         // Response
         
-        createMessageWithText(text: "Yes!!Totally looking to buy iPhone 7..", friend: steve,minuteAgo :2, context: context,isSender: true)
-        createMessageWithText(text: "Ok Thanks for response,Untill then i will use my gigentic iphone 6 Plue..", friend: steve,minuteAgo :0, context: context,isSender: true)
+        FriendsController.createMessageWithText(text: "Yes!!Totally looking to buy iPhone 7..", friend: steve,minuteAgo :2, context: context,isSender: true)
+        FriendsController.createMessageWithText(text: "Ok Thanks for response,Untill then i will use my gigentic iphone 6 Plue..", friend: steve,minuteAgo :0, context: context,isSender: true)
     }
     
     
@@ -144,10 +145,10 @@ extension FriendsController{
             hilary.profileImageName = "Hilary"
             
             
-            createMessageWithText(text: "Hello I created Facebook.I am a CEO...", friend: mark, minuteAgo: 1, context: context)
-            createMessageWithText(text: "You are Fired!!", friend: donald, minuteAgo: 4, context: context)
-            createMessageWithText(text: "Love ,Peace and Joy", friend: gandhi, minuteAgo: 60 * 50, context: context)
-            createMessageWithText(text: "Vote For Me.As you do for Bill", friend: hilary, minuteAgo: 8 * 60 * 24, context: context)
+            FriendsController.createMessageWithText(text: "Hello I created Facebook.I am a CEO...", friend: mark, minuteAgo: 1, context: context)
+            FriendsController.createMessageWithText(text: "You are Fired!!", friend: donald, minuteAgo: 4, context: context)
+            FriendsController.createMessageWithText(text: "Love ,Peace and Joy", friend: gandhi, minuteAgo: 60 * 50, context: context)
+            FriendsController.createMessageWithText(text: "Vote For Me.As you do for Bill", friend: hilary, minuteAgo: 8 * 60 * 24, context: context)
             
             
             do{
